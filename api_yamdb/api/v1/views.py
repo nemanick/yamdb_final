@@ -1,3 +1,13 @@
+from api.v1.filters import TitleFilter
+from api.v1.mixins import ListCreateDestroyMixin
+from api.v1.pagination import PagePagination
+from api.v1.permissions import (IsAdmin, IsAdminOrRead, IsAdminUpdate,
+                                IsAuthor, IsModerator)
+from api.v1.serializers import (CategoriesSerializer, CommentSerializer,
+                                GenresSerializer, ReviewSerializer,
+                                TitleReadSerializer, TitleSerializer,
+                                TokenSerializer, UserCreateSerializer,
+                                UserSerializer)
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage
 from django.db.models import Avg
@@ -11,18 +21,8 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
-
-from api.v1.filters import TitleFilter
-from api.v1.mixins import ListCreateDestroyMixin
-from api.v1.pagination import PagePagination
-from api.v1.permissions import (IsAdmin, IsAdminOrRead, IsAdminUpdate,
-                                IsAuthor, IsModerator)
-from api.v1.serializers import (CategoriesSerializer, CommentSerializer,
-                                GenresSerializer, ReviewSerializer,
-                                TitleReadSerializer, TitleSerializer,
-                                TokenSerializer, UserCreateSerializer,
-                                UserSerializer)
 from reviews.models import Categories, Genres, Review, Title, User
+
 from api_yamdb.settings import DOMAIN_NAME
 
 FROM_EMAIL = f'noreply@{DOMAIN_NAME}'
