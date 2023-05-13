@@ -70,7 +70,7 @@ http://localhost/admin
 docker-compose exec web python manage.py loaddata fixtures.json 
 ```` 
 
-Все необходимое для работы с api описано в документации:
+Все необходимое для работы с api описано в документации по адресу:
 ```
 http://localhost/redoc/
 ```
