@@ -75,4 +75,4 @@ docker-compose exec web python manage.py loaddata fixtures.json
 http://localhost/redoc/
 ```
 
-![example workflow](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/nemanick/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
