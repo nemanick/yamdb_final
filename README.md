@@ -67,7 +67,7 @@ http://158.160.38.16/admin
 
 Команда для загрузки в БД данных из фикстур:
 ````
-docker-compose exec web python manage.py loaddata fixtures.json 
+docker-compose exec web python manage.py loaddata fixtures.json .
 ```` 
 
 Все необходимое для работы с api описано в документации:
