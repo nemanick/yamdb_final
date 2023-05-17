@@ -65,7 +65,7 @@ docker-compose exec web python manage.py createsuperuser
 http://158.160.38.16/admin
 ```
 
-Все необходимое для работы с api описано в документации:
+Все необходимое для работы с api описано:
 ```
 http://158.160.38.16/redoc/
 ```
