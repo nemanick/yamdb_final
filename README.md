@@ -62,7 +62,7 @@ docker-compose exec web python manage.py createsuperuser
 ```
 После чего можно проверить работу проекта и войти в админку:
 ```
-http://*server's pub ip*/admin
+http://158.160.38.16/admin
 ```
 
 Команда для загрузки в БД данных из фикстур:
@@ -72,7 +72,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 Все необходимое для работы с api описано в документации:
 ```
-http://*server's pub ip*/redoc/
+http://158.160.38.16/redoc/
 ```
 
 ![example workflow](https://github.com/nemanick/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
