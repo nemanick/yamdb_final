@@ -65,9 +65,14 @@ docker-compose exec web python manage.py createsuperuser
 http://158.160.38.16/admin
 ```
 
-Все необходимое для работы с api описано:
+Команда для загрузки в БД данных из фикстур:
+````
+docker-compose exec web python manage.py loaddata fixtures.json 
+```` 
+
+Все необходимое для работы с api описано в документации:
 ```
-http://158.160.38.16/redoc/
+http://127.0.0.1/redoc/
 ```
 
 ![example workflow](https://github.com/nemanick/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
