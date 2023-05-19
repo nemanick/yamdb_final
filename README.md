@@ -70,6 +70,11 @@ http://127.0.0.1/admin
 docker-compose exec web python manage.py loaddata fixtures.json 
 ```` 
 
+Запущенный проект можно посмотреть по ссылке:
+````
+http://127.0.0.1/
+```` 
+
 Все необходимое для работы с api описано в документации:
 ```
 http://127.0.0.1/redoc/
