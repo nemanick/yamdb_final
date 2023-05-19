@@ -62,7 +62,7 @@ docker-compose exec web python manage.py createsuperuser
 ```
 После чего можно проверить работу проекта и войти в админку:
 ```
-http://158.160.38.16/admin
+http://127.0.0.1/admin
 ```
 
 Команда для загрузки в БД данных из фикстур:
