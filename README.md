@@ -72,7 +72,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 Запущенный проект можно посмотреть по ссылке:
 ````
-http://127.0.0.1/
+http://158.160.38.16/
 ```` 
 
 Все необходимое для работы с api описано в документации:
